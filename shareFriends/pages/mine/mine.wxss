@@ -1,0 +1,154 @@
+/* pages/mine/mine.wxss */
+
+.mineTop{
+  width: 100%;
+  height: 550rpx;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.mask{
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .1);
+  z-index: 2;
+}
+
+.editor{
+  position: absolute;
+  right: 40rpx;
+  top: 20rpx;
+}
+
+.editor image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+.personName{
+  margin-top: 120rpx;
+  margin-left: 40rpx;
+  color: #ffffff;
+  z-index: 3;
+}
+
+.nickName{
+  font-size: 48rpx;
+  margin-bottom: 20rpx;
+}
+
+.shareId{
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.pleasure{
+  display: flex;
+  flex-direction: row;
+}
+
+.vip{
+  font-size: 24rpx;
+  height: 30rpx;
+  width: 56rpx;
+  text-align: center;
+  line-height: 30rpx;
+  background-color:#FFD700;
+  border-radius: 10rpx;
+  padding: 2rpx 4rpx;
+  margin-right: 6rpx;
+}
+
+.level{
+  font-size: 24rpx;
+  height: 30rpx;
+  width: 56rpx;
+  text-align: center;
+  line-height: 30rpx;
+  background-color:#f2f;
+  border-radius: 10rpx;
+  padding: 2rpx 4rpx;
+  margin-right: 6rpx;
+}
+
+.history{
+  width: 90%;
+  height: 100rpx;
+  border-radius: 10rpx;
+  background-color: #ffffff;
+  box-shadow: 0rpx 10rpx 10rpx #d3d3d3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  z-index: 4;
+  padding: 10rpx;
+}
+
+.history image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.value{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  padding-left: 40rpx;
+  margin-top: 60rpx;
+  margin-bottom:80rpx;
+}
+
+.value>view{
+  display: flex;
+  flex-direction: row;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.value .valueName{
+  font-size: 28rpx;
+}
+
+.value text{
+  font-size: 40rpx;
+}
+
+.mineContent{
+  width: 100%;
+}
+
+.mineContent .listBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mineContent .listBox .list{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40rpx 0;
+  margin-bottom: 20rpx;
+}
+
+.mineContent image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 10rpx;
+}
+
+.mineContent .title{
+  font-size: 30rpx;
+}

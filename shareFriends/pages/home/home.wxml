@@ -1,0 +1,7 @@
+<!-- <import src="../../compoment/navgation/navgation.wxml"/> -->
+<import src="../../compoment/shareList/shareList.wxml"/>
+<!-- <template is="bottomNav" data="{{ active }}"/> -->
+<view>
+  <view class='address'>当前位置：{{currentCity}}</view>
+  <template is="shareList" data="{{ dataObj }}" wx:key="index" />
+</view>

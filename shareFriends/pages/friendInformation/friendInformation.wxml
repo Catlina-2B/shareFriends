@@ -1,0 +1,45 @@
+<import src="../../compoment/dyamicList/dyamicList.wxml" />
+<view class='personImg' style='background-image: url({{userinfo.personHeadImg}})'>
+  <view class='mask'></view>
+  <view class='report'>举报</view>
+</view>
+<view class='personName'>
+  <view class='nickName'>{{userinfo.nickName}}</view>
+  <view class='shareId'>共享ID：{{userinfo.userid}}</view>
+  <view class='pleasure'>
+    <view wx:if="{{userinfo.vip > 0}}" class='vip'>VIP</view>
+    <view class='level'>Lv{{userinfo.level}}</view>
+  </view>
+</view>
+<view class='value'>
+  <view>
+    <view class='valueName'>Share分</view>
+    <text>195231</text>
+  </view>
+  <view>
+    <view class='valueName'>关注</view>
+    <text>195231</text>
+  </view>
+  <view>
+    <view class='valueName'>粉丝</view>
+    <text>195231</text>
+  </view>
+</view>
+<view class='like'>
+  <view style="background-color: {{userinfo.hasConcerned == false? 'rgba(225, 225, 225, .3)' : '#FF1493'}}">+关注</view>
+  <view style="background-color: {{userinfo.hasLiked == false? 'rgba(225, 225, 225, .3)' : '#FF1493'}}">喜欢</view>
+  <view class='compose'>私信</view>
+</view>
+<view class='history'>
+  <view>
+    <image></image>
+    <text>珍爱团</text>
+  </view>
+  <image src='../../images/right.png'></image>
+</view>
+<view class='tabView'>
+  <view bindtap='tabChoose' data-id="0" class="{{active == 0? 'active' : ''}}">动态</view>
+  <view bindtap='tabChoose' data-id="1" class="{{active == 1? 'active' : ''}}">技能</view>
+  <view bindtap='tabChoose' data-id="2" class="{{active == 2? 'active' : ''}}">资料</view>
+</view>
+<template wx:if="{{active == 0}}" is="dyamicList" data="{{userinfo}}" />

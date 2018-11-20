@@ -1,0 +1,59 @@
+.dyamicList{
+  background-color: #fdfdfd;
+}
+
+.dyamicList .top{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dyamicList .top .headImg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid fuchsia;
+  margin-right: 30rpx;
+}
+
+.topLeft{
+  display: flex;
+  flex-direction: row;
+}
+
+.topLeft .user{
+  display: flex;
+  flex-direction: column;
+}
+
+.userName{
+  height: 50rpx;
+  font-size: 32rpx;
+  color: fuchsia;
+  line-height: 50rpx;
+}
+
+.feedTime{
+  height: 50rpx;
+  font-size: 30rpx;
+  color: #e1e1e1;
+  line-height: 50rpx;
+}
+
+.content{
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+
+.more{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}

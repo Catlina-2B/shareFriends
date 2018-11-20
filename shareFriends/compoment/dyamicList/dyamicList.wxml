@@ -1,0 +1,18 @@
+<template name="dyamicList">
+  <block wx:for="{{userinfo.feeds}}" wx:key="index">
+    <view class='split'></view>
+    <view class='dyamicList'>
+      <view class='top'>
+        <view class='topLeft'>
+          <view class='headImg' style="background-image: url({{userinfo.personHeadImg}})"></view>
+          <view class='user'>
+            <view class='userName'>{{userinfo.nickName}}</view>
+            <view class='feedTime'>{{item.time}}</view>
+          </view>
+        </view>
+        <image class='more' src='../../images/more.png'></image>
+      </view>
+      <view class='content'>{{item.content}}</view>
+    </view>
+  </block>
+</template>

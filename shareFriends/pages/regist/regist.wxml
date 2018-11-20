@@ -1,0 +1,29 @@
+<!--pages/regist/regist.wxml-->
+<import src="../../compoment/toast/toast.wxml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+<view class='container'>
+  <text>注册</text>
+  <form bindsubmit="formSubmit">
+    <label>
+      <view class='left'>姓名：</view>
+      <input class='right' type='text' value='{{registUserInfo.username}}' name="username" bindblur='vaildUserName'></input>
+    </label>
+    <label>
+      <view class='left'>性别：</view>
+      <picker class='right' name="sex" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker" data-text="{{registUserInfo.sex}}">
+          {{array[index]}}
+        </view>
+      </picker>
+    </label>
+    <label>
+      <view class='left'>手机号：</view>
+      <input class='right' type='number' value='{{registUserInfo.userNumber}}' name="UserNumber" bindblur='vaildUserNumber'></input>
+    </label>
+    <label>
+      <view class='left'>验证码：</view>
+      <input class='right' type='number' value='{{registUserInfo.verify}}' name="verify" bindblur='vaildVerify'></input>
+    </label>
+    <button class='submit' formType="submit">提交</button>
+  </form>
+</view>

@@ -1,0 +1,3 @@
+<template name="square">
+  <view>square</view>
+</template>

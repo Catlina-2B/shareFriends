@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class='preview'>
+  <view class='pass' bindtap='pass'>跳过</view>
+</view>

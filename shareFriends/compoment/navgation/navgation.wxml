@@ -1,0 +1,9 @@
+<template name="bottomNav">
+  <view class='navBox'>
+    <view class='nav'>
+      <view bindtap='goThere' data-location="home" class="{{active == 0? 'active' : ''}}">首页</view>
+      <view bindtap='goThere' data-location="community" class="{{active == 1? 'active' : ''}}">社区</view>
+      <view bindtap='goThere' data-location="mine" class="{{active == 2? 'active' : ''}}">我的</view>
+    </view>
+  </view>
+</template>

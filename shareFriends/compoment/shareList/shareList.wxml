@@ -1,0 +1,24 @@
+<template name="shareList">
+  <scroll-view class='shareListBox'>
+    <block wx:for="{{dataObj}}" wx:key="index">
+      <!-- <template is="shareList" data="{{ dataObj }}" wx:key="index" /> -->
+      <view class='shareList' data-userid="{{item.userid}}" bindtap='lookInformation'>
+        <!-- <image class='headImage' src='{{item.headImage}}'></image> -->
+        <view class='headImage' style='background-image:url("{{item.headImage}}")'></view>
+        <view class='right'>
+          <view class='right-top'>
+            <text class='name'>{{item.name}}</text>
+            <text class='distance'>距离我：{{item.distance}}米</text>
+          </view>
+          <view class='right-bottom'>
+            <view class='right-middle'>
+              <text class='sex'>{{item.sex}}</text>
+              <text class='shareScore'>{{item.shareScore}}s</text>
+            </view>
+            <text class='signature'>{{item.signature}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</template>

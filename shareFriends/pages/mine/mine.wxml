@@ -1,0 +1,46 @@
+
+<!-- <import src="../../compoment/navgation/navgation.wxml"/> -->
+<!-- <template is="bottomNav" data="{{ active }}"/> -->
+<view class='mineTop' style='background-image: url({{userinfo.personHeadImg}})'>
+  <view class='mask'></view>
+  <view class='editor'>
+    <image src='../../images/editor2.png'></image>
+  </view>
+</view>
+<view class='personName'>
+  <view class='nickName'>{{userinfo.nickName}}</view>
+  <view class='shareId'>共享ID：{{userinfo.userid}}</view>
+  <view class='pleasure'>
+    <view wx:if="{{userinfo.vip > 0}}" class='vip'>VIP</view>
+    <view class='level'>Lv{{userinfo.level}}</view>
+  </view>
+</view>
+<view class='value'>
+  <view>
+    <view class='valueName'>Share分</view>
+    <text>195231</text>
+  </view>
+  <view>
+    <view class='valueName'>关注</view>
+    <text>195231</text>
+  </view>
+  <view>
+    <view class='valueName'>粉丝</view>
+    <text>195231</text>
+  </view>
+</view>
+<view class='history'>
+  <view>
+    <image></image>
+    <text>珍爱团</text>
+  </view>
+  <image src='../../images/right.png'></image>
+</view>
+<view class='mineContent'>
+  <view class='listBox'>
+    <view class='list wallet' wx:for="{{list}}" wx:key="index">
+      <image src='{{item.imageSrc}}'></image>
+      <view class='title'>{{item.text}}</view>
+    </view>
+  </view>
+</view>
